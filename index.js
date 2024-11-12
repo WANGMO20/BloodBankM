@@ -14,6 +14,9 @@ const connection=async(req,res,next)=>{
 }
 connection()
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the homepage!');
+});
 
 const PORT = process.env.PORT || 5050
 app.listen(PORT, () => {
